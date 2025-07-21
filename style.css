@@ -1,0 +1,451 @@
+/*
+====================
+STYLE GLOBAL
+(Reset, Base e estilo global)
+====================
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'IBM Plex Mono', Arial, sans-serif;
+  background: #F5F5F5;
+  color: #5a5a5a;
+  line-height: 1.5;
+}
+
+h1 {
+    font-family: 'IBM Plex Mono', sans-serif, Arial;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.menu-btn {
+  display: inline-block;
+  padding: 10px 24px;
+  margin: 6px 4px;
+  background: #FF6F00;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+.menu-btn:hover {
+  background: #e65c00;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.35);
+}
+ul.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.footer {
+  background: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+}
+
+
+/*
+====================
+header index
+====================
+*/
+.header-perfil {
+  position: relative;
+  overflow: hidden;
+  height: 50vh;
+}
+
+/* faz o vídeo cobrir todo o header */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: 0;            /* atrás de tudo */
+}
+
+/* conteúdo do header sobre o vídeo */
+.header-perfil .header-content {
+  position: relative;
+  z-index: 1;            /* acima do vídeo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+/* garante que a logo também fique acima do vídeo */
+.header-perfil .logo {
+  position: relative;
+  z-index: 1;
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: none;
+  padding: 10px 0;
+}
+
+.marquee {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.icones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 50px;
+  height: auto;
+}
+
+.icones-pequenos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 70px;
+  height: auto;
+}
+
+.icones-marquee {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+/*
+====================
+main index
+====================
+*/
+.main-perfil {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#logico {
+  font-family: 'IBM Plex Mono', monospace, Arial, sans-serif;
+  color: #333;
+  font-weight: 600;
+}
+
+
+#criativo {
+  font-family: 'Pacifico', sans-serif, Arial;
+  color: #8A2BE2;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+
+#inteligente {
+  font-family: 'Space Mono', sans-serif, Arial;
+  color: #555555;
+  font-weight: 500;
+}
+
+
+/*
+====================
+header sobre
+====================
+*/
+.header-sobre {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+}
+.header-sobre .foto-perfil {
+  width: 180px;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid #FF6F00;
+  margin: 0 auto;
+}
+
+/*
+====================
+main sobre
+====================
+*/
+.sobre-container {
+  max-width: 720px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.sobre-container h1 {
+  font-size: 2rem;
+  color: #004080;
+  margin-bottom: 12px;
+}
+.sobre-container h2 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+.sobre-container p {
+  margin-bottom: 16px;
+}
+.sobre-container .detalhe {
+  font-style: italic;
+  color: #777;
+}
+.sobre-container .contato a {
+  color: #FF6F00;
+  font-weight: bold;
+}
+.container-imagens {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.foto-perfil {
+  width: 180px;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid #FF6F00;
+}
+
+
+/*
+====================
+header contato
+====================
+*/
+
+
+header {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 2rem;
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+/*
+====================
+main (formulário) contato
+====================
+*/
+.contato-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contato-container h2 {
+  color: #FF6F00;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: none;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-family: 'IBM Plex Mono', Arial, sans-serif;
+}
+
+/* =============================
+   Teclado social
+============================= */
+h1 {
+  text-align: center;
+  color: #e65c00;
+  margin-bottom: 10px;
+}
+
+#teclado-social {
+  display: block;
+  width: 350px;
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Container relativo para base + ícones */
+.teclado-wrapper {
+  position: relative;
+  display: block;
+  width: max-content;
+  margin: 2rem auto; 
+}
+
+
+/* Estilo comum a todos os ícones */
+.icone {
+  position: absolute;
+  width: 40px;               /* Tamanho do ícone */
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+/* Pequeno efeito no hover */
+.icone:hover {
+  transform: scale(1.1);
+}
+
+/* Posição dos ícones */
+.icone-linkedin {
+  top: 15px;
+  left: 18px;
+  background-image: url('assets/media/icons/linkedin.png');
+}
+.icone-github {
+  top: 15px;
+  left: 72px;
+  background-image: url('assets/media/icons/gitHub.png');
+}
+.icone-facebook {
+  top: 15px;
+  left: 127px;
+  background-image: url('assets/media/icons/facebook.png');
+}
+.icone-instagram {
+  top: 15px;
+  left: 183px;
+  background-image: url('assets/media/icons/instagram.png');
+}
+.icone-messenger {
+  top: 15px;
+  left: 239px;
+  background-image: url('assets/media/icons/messenger.png');
+}
+.icone-discord {
+  top: 15px;
+  left: 294px;
+  background-image: url('assets/media/icons/discord.png');
+}
+
+
+/*
+====================
+Projetos Habilidades
+====================
+*/
+/* Container geral */
+.habilidades-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Grid de skills */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* Cada skill como um cartão */
+.skill-card {
+  background: #fff;
+  color: #333;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-weight: bold;
+  flex: 1 1 140px; 
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.icones-tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 100px;
+  height: auto;
+}
+
+#Habilidades {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-family: 'IBM Plex Mono', sans-serif, Arial;
+}
