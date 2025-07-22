@@ -81,6 +81,8 @@ header index
   height: 100%;
   object-fit: cover; 
   z-index: 0;            /* atrás de tudo */
+  transform: scale(1.2);
+  transform-origin: center;    /* centraliza o zoom */
 }
 
 /* conteúdo do header sobre o vídeo */
