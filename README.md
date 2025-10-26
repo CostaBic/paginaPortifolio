@@ -1,4 +1,4 @@
-# 🌐 Portfólio Profissional - Raphael Costa Bianco
+# 🌐 Portfólio Profissional
 
 ## 📌 Sobre o Projeto
 
