@@ -2,8 +2,8 @@
 
 ## 📌 Sobre o Projeto
 
-Este é o meu portfólio profissional desenvolvido com **HTML5, CSS3 e JavaScript**.  
-O objetivo é apresentar minhas **habilidades**, **experiência profissional** e **projetos**, funcionando como um **cartão de visitas digital**.
+Este é um exemplo de portfólio profissional desenvolvido com **HTML5, CSS3 e JavaScript**.  
+O objetivo é apresentar **habilidades**, **experiência profissional** e **projetos**, funcionando como um **cartão de visitas digital**.
 
 Além das páginas de perfil, o site conta com:
 - ✅ **Animações e efeitos visuais modernos**
